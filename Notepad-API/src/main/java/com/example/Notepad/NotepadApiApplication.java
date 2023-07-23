@@ -8,7 +8,6 @@ public class NotepadApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NotepadApiApplication.class, args);
-		System.out.println("Hello World");
 	}
 
 }
