@@ -2,8 +2,7 @@
 A web application build by Spring-boot with MVC architecture pattern
 # Notepad App CRUD API - Spring MVC
 
-[![GitHub Stars](https://img.shields.io/github/stars/shakib522/notepad-app-spring-mvc.svg)](https://github.com/shakib522/notepad-app-spring-mvc/stargazers)
-[![License](https://img.shields.io/github/license/shakib522/notepad-app-spring-mvc.svg)]([https://github.com/shakib522/Notepad-API/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Welcome to the **Notepad App CRUD API** built with Spring MVC! This repository houses a simple yet powerful CRUD (Create, Read, Update, Delete) API for managing notes in a Notepad application. With Spring MVC's elegance and efficiency, managing your notes has never been easier!
 
