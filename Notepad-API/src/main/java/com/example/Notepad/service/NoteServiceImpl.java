@@ -15,7 +15,10 @@ public class NoteServiceImpl implements NoteService{
     @Autowired
     private NoteRepository repository;
     @Override
-    public Notes saveNotes(Notes notes) {
+    public Notes saveNotes(Notes notes)throws DefaultException {
+        if(notes.getType()==null || notes.getTitle()==null || notes.getNote()==null){
+            throw new DefaultException("Please provide all the details", HttpStatus.BAD_REQUEST);
+        }
         return repository.save(notes);
     }
 
@@ -48,5 +51,10 @@ public class NoteServiceImpl implements NoteService{
             e.printStackTrace();
         }
          return new SuccessMessage("success","Note Deleted Successfully");
+    }
+
+    @Override
+    public List<Notes> getAllByType(String type) {
+        return repository.findByType(type);
     }
 }
