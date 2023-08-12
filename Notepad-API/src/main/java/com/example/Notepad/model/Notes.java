@@ -19,11 +19,9 @@ public class Notes {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long noteId;
-    @NotBlank(message = "Please add type")
     private String type;
     @NotNull
     private boolean textOrCheckBox;
     private String title;
-    @NotBlank(message = "note can not be blank")
     private String note;
 }
